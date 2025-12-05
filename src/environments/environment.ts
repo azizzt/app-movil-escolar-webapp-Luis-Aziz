@@ -4,5 +4,5 @@
 
 export const environment = {
   production: true,
-  url_api: "https://control_escolar_desit_api_luis-aziz.onrender.com"
+  url_api: "https://control-escolar-desit-api-luis-aziz.onrender.com"
 };
