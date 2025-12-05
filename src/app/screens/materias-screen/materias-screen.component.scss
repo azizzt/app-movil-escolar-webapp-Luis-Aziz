@@ -1,0 +1,93 @@
+/* =========================
+   Ajustes del contenedor principal (Sidebar)
+   ========================= */
+.main-content {
+  margin-left: 220px; /* Ancho del sidebar */
+  transition: margin-left 0.3s;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f4f7fb; /* Color de fondo general */
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
+/* =========================
+   Títulos y Encabezados
+   ========================= */
+.title-perfil {
+  font-family: 'Nexa-Bold', sans-serif;
+  font-size: 2.5rem;
+  color: #23395d;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Botones y Filtros
+   ========================= */
+button[mat-raised-button] {
+  font-family: 'Nexa-Bold', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   Tabla y Contenedor
+   ========================= */
+.mat-elevation-z8 {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden; /* Para que el borde redondeado afecte a la tabla */
+  background: white;
+}
+
+table {
+  width: 100%;
+}
+
+/* Encabezados de tabla */
+th.mat-header-cell {
+  background-color: #cfe2ff; /* Color azul claro del tema */
+  color: #23395d;
+  font-family: 'Nexa-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Celdas */
+td.mat-cell {
+  font-family: 'Nexa', sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 16px;
+}
+
+/* =========================
+   Responsividad de la Tabla
+   ========================= */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .title-perfil {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* Ajuste para que los botones de acción no se vean muy grandes en móvil */
+  button[mat-icon-button] {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+    mat-icon {
+      font-size: 18px;
+    }
+  }
+}
